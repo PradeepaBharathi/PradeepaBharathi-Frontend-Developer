@@ -1,0 +1,43 @@
+@media screen and (max-width: 426px) and (min-width: 320px) {
+    .navbar {
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      position: relative;
+    }
+  
+    .nav-left {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      list-style-type: disc;
+    }
+ #feature{
+    margin-left: 15px;
+ }
+    .heading {
+      width: auto;
+      margin-left: 50px;
+      margin-bottom: 26px;
+    }
+  
+   .nav-right{
+    margin-left: 48px !important;
+   }
+   
+  }
+
+  @media screen and (max-width: 768px){
+   .nav-left{
+    margin-left: -2px;
+   }
+  }

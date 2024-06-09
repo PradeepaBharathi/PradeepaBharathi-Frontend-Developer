@@ -1,0 +1,10 @@
+.heading-gradient {
+    background: linear-gradient(90deg, white, #8D9BA3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .breaker{
+    border-color:#2E274A;
+   height: 5px;
+}

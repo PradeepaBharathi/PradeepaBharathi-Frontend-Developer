@@ -1,0 +1,17 @@
+.head-gradient {
+    background: linear-gradient(90deg, #EA73F3, #9F6EE6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (max-width:426px) and (min-width:320) {
+    .roadmap1{
+      flex-direction: column;
+    }
+   .phase1{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   }
+  }
