@@ -33,7 +33,7 @@ function Filler() {
   return (
     <div className='bg-gradient-to-b from-black to-roadmap1'>
 
-<div className="grid grid-cols-7   place-items-center opacity-55 animate-pulse overflow-x-hidden  " data-aos='fade-up'>
+<div className="grid grid-cols-7   place-items-center opacity-55  overflow-x-hidden " data-aos='slide-up'>
         <div className='flex flex-col gap-8 containerImage'>
         <img src={image1} alt="Person 1" className="rounded-lg w-40 h-40 object-cover" />
         <img src={image2} alt="Person 2" className="rounded-lg w-40 h-40 object-cover" />

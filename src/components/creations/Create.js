@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import image1 from '../assests/create/image1.png';
 import image2 from '../assests/create/image2.png';
@@ -22,9 +22,16 @@ import image19 from '../assests/create/image19.png';
 import image20 from '../assests/create/image20.png';
 import image21 from '../assests/create/image21.png';
 import './create.css'
+import aos from 'aos'
+import "aos/dist/aos.css";
 const Create = () => {
+  useEffect(() => {
+    aos.init({
+      duration: 1200,
+    });
+  }, []);
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-createbg1 to-createbg2 flex justify-center items-center p-4">
+    <div className="relative min-h-screen bg-gradient-to-b from-createbg1 to-createbg2 flex justify-center items-center p-4" data-aos='fade-up'>
     
       <div className="grid grid-cols-7   place-items-center opacity-55 animate-pulse  " >
         <div className='flex flex-col gap-8 imageContainer'>

@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Contact.css';
 import twitter from '../assests/twitter.png';
 import linkedin from '../assests/linkedin.png';
 import tiktok from '../assests/tiktok.png';
 import youtube from '../assests/youtubeicon.png';
-
+import aos from 'aos'
+import 'aos/dist/aos.css'; 
 function Contact() {
+  useEffect(() => {
+    aos.init({
+      duration: 1200,
+    });
+  }, []);
   return (
-    <div className='bg-gradient-to-b from-black to-roadmap1 min-h-screen flex flex-col'>
+    <div className='bg-gradient-to-b from-black to-roadmap1 min-h-screen flex flex-col' data-aos='fade-up'>
    <div className='flex flex-col md:flex-row justify-between items-center p-5 md:p-24 mt-10 md:mt-32 contactcontainer'>
   <div className='heading-gradient text-3xl md:text-4xl w-full md:w-1/2 leading-loose text-center md:text-left'>
     Dash dash terraUSD neo uniswap kadena helium avalanche polymath bancor.

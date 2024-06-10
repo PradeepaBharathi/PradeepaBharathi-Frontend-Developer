@@ -9,9 +9,11 @@ import buterin from '../assests/buterin.jpeg';
 import biden from '../assests/joe-biden.png';
 import einstein from '../assests/einstein.png';
 import obama from '../assests/obama.png';
-import 'animate.css';
+import'animate.css'
+
 
 function Home() {
+  
   return (
     <div className="bg-gradient-to-b from-black to-customColor min-h-screen w-full">
       <div className='content flex flex-col lg:flex-row flex-1 justify-center items-center lg:justify-start lg:items-start pt-10 lg:pt-20'>
@@ -37,7 +39,7 @@ function Home() {
         </div>
         <div className="flex flex-col w-full lg:w-[40%] mt-5 text-white ">
           <div className="grid grid-cols-3 gap-4">
-            <div className='grid animate__animated animate__fadeInDown animate__slow img-container1'>
+            <div className='grid animate__animated animate__fadeInDown animate__slow img-container1' >
               <img src={elon} alt="Elon Musk" className="rounded-lg h-[120px] lg:h-[160px] object-cover" />
               <img src={billgates} alt="Bill Gates" className="rounded-lg h-[120px] lg:h-[160px] object-cover mt-4" />
               <img src={tim} alt="Tim Cook" className="rounded-lg h-[120px] lg:h-[160px] object-cover mt-4" />
