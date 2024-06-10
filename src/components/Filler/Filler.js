@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './filler.css'
 import arrow from '../assests/Img - Arrow right.png'
 import image1 from '../assests/create/image1.png';
@@ -22,11 +22,18 @@ import image18 from '../assests/create/image18.png';
 import image19 from '../assests/create/image19.png';
 import image20 from '../assests/create/image20.png';
 import image21 from '../assests/create/image21.png';
+import aos from "aos";
+import "aos/dist/aos.css";
 function Filler() {
+  useEffect(() => {
+    aos.init({
+      duration: 1200,
+    });
+  }, []);
   return (
     <div className='bg-gradient-to-b from-black to-roadmap1'>
 
-<div className="grid grid-cols-7   place-items-center opacity-55 animate-pulse overflow-x-hidden  " >
+<div className="grid grid-cols-7   place-items-center opacity-55 animate-pulse overflow-x-hidden  " data-aos='fade-up'>
         <div className='flex flex-col gap-8 containerImage'>
         <img src={image1} alt="Person 1" className="rounded-lg w-40 h-40 object-cover" />
         <img src={image2} alt="Person 2" className="rounded-lg w-40 h-40 object-cover" />

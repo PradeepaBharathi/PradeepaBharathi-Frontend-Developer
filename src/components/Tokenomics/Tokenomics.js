@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './tokenomics.css';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart, ArcElement, Tooltip, Legend } from 'chart.js';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // Register the necessary elements with Chart.js
 Chart.register(ArcElement, Tooltip, Legend);
 
 function Tokenomics() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, 
+    });
+  }, []);
+
+  
   const data = {
     labels: ['Partnership/CEX Wallet (5%)', 'LP Pool (35%)', 'Burned (30%)', 'BNB LP Pool (30%)'],
     datasets: [
@@ -79,8 +88,8 @@ function Tokenomics() {
         </div>
       </div>
 
-      <div className=" relative w-[500px] h-[500px] flex tokenomics-chart">
-        <Doughnut data={data} options={options} />
+      <div className=" relative w-[500px] h-[500px] flex tokenomics-chart" data-aos='flip-left' >
+        <Doughnut data={data} options={options}  />
       </div>
     </div>
   );
